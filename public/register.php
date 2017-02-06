@@ -7,7 +7,7 @@ $last_name = "";
 $email = "";
 $username = "";
 $today = date("Y-m-d H:i:s");
-$errors = [];
+$errors = array();
 
   // if this is a POST request, process the form
   // Hint: private/functions.php can help
