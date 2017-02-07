@@ -27,11 +27,11 @@ The following **required** functionality is completed:
   * [X]  Required: Validate that username has at least 8 characters.
   * [X]  Required: Validate that email contains a "@".
 
-5. [ ]  Required: Display form errors if any validations fail.
+5. [X]  Required: Display form errors if any validations fail.
   * [X]  Required: Do not submit the data to the database.
   * [X]  Required: Redisplay the form with the submitted values filled in.
-  * [ ]  Required: Report all errors as a list above the form.
-  * [ ]  Required: Test each field to ensure you get the expected errors.
+  * [X]  Required: Report all errors as a list above the form.
+  * [X]  Required: Test each field to ensure you get the expected errors.
 
 6. [X]  Required: Submit successfully-validated form values to the database.
   * [X]  Required: Write an SQL insert statement.
@@ -43,7 +43,7 @@ The following **required** functionality is completed:
     * [X]  Required: Locate the page "public/registration\_success.php".
     * [X]  Required: Redirect the user to the new page. ([Tips](#!hints))
 
-8. [ ]  Required: Sanitize all dynamic output for HTML. ([Tips](#!hints))
+8. [X]  Required: Sanitize all dynamic output for HTML. ([Tips](#!hints))
 
 
 The following advanced user stories are optional:
