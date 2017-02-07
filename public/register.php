@@ -7,7 +7,7 @@ $last_name = "";
 $email = "";
 $username = "";
 $today = date("Y-m-d H:i:s");
-$errors = array();
+$errors = [];
 
   // if this is a POST request, process the form
   // Hint: private/functions.php can help
@@ -47,7 +47,7 @@ if(is_post_request()) {
     if (is_blank($_POST['username'])) {
         $errors[] = "Username cannot be blank.";
     } elseif (!has_length($_POST['email'], ['min' => 8, 'max' => 255])) {
-        $errors[] = "Email must be between 8 and 255 characters.";
+        $errors[] = "Username must be between 8 and 255 characters.";
     }
 
     // if there were no errors, submit data to database
@@ -95,8 +95,8 @@ if(is_post_request()) {
   <?php
     // TODO: display any form errors here
     // Hint: private/functions.php can help
-    if (isset($_POST['$errors'])) {
-        display_errors($errors);
+    if (!empty($errors)) {
+        echo display_errors($errors);
     }
 
   ?>
